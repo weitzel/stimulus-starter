@@ -7,5 +7,12 @@
 </head>
 <body>
   <h1 data-controller="example"></h1>
+  <div data-controller="something">
+    <div data-action="click->something#speak">click me</div>
+    <h1>first</h1>
+    <div data-action="click->something#getXY" style="background:gray; width:200px; height:200px;"></div>
+    <h1>second</h1>
+    <div data-action="mousedown->something#xyDown mouseup->something#xyUp" style="background:gray; width:200px; height:200px;"></div>
+  </div>
 </body>
 </html>
